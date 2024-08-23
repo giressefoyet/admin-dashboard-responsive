@@ -1,0 +1,302 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Pour changer les couleurs des éléments spécifiques dans le mode sombre */
+body.dark-mode .menu {
+    background-color: #444;
+}
+
+body.dark-mode .formulaire {
+    background-color: #555;
+}
+
+body.dark-mode .forme {
+    background-color: #666;
+}
+
+/* Pour changer les couleurs des liens et boutons */
+body.dark-mode a,
+body.dark-mode i,
+body.dark-mode p {
+    color: #ccc;
+}
+
+body.dark-mode .formulaire form input[type="submit"] {
+    background-color: #444;
+    color: #ccc;
+}
+
+body.dark-mode .formulaire form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Ajoutez vos autres styles spécifiques au mode sombre ici */
+
+
+/* Container */
+.conteneur {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Menu Section */
+.menu {
+    flex: 1 1 250px;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #3333335d;
+    color: #000;
+}
+
+.menu a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.menu .logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu .logo i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.menu .logo p {
+    font-size: 1.25rem;
+}
+
+.menu .bloc ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.menu .bloc ul li {
+    margin-bottom: 10px;
+}
+
+.menu .bloc ul li a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu .bloc ul li a i {
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.menu .darkmode i{
+    font-size: 2rem;
+}
+/* Corps Section */
+.corps {
+    flex: 3 1 600px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom:  1px solid black;
+}
+
+.icon i {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.icon p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc1 {
+    margin-bottom: 20px;
+}
+
+.bloc1 .information h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+.nloc1 .information hr{
+    margin-block: 15px;
+}
+.bloc1 .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .forme h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.forme{
+    background-color: #bebebe80;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.125);
+    margin-block: 20px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.forme span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.formulaire {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulaire .infos{
+    text-align: center;
+}
+.formulaire .infos h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.formulaire form .form-bloc {
+    margin-bottom: 15px;
+}
+
+.formulaire form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulaire form input[type="text"],
+.formulaire form input[type="email"],
+.formulaire form input[type="tel"],
+.formulaire form select,
+.formulaire form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulaire textarea{
+    resize: none;
+}
+.formulaire form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formulaire form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#top-btn{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.125);
+    cursor: pointer;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .conteneur {
+        flex-direction: column;
+    }
+
+    .corps {
+        padding: 10px;
+    }
+
+    .menu {
+        padding: 10px 0;
+    }
+
+    .icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon i {
+        margin-bottom: 10px;
+    }
+
+    .contenu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu .logo p {
+        font-size: 1rem;
+    }
+
+    .icon p {
+        font-size: 1.25rem;
+    }
+
+    .formulaire form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
